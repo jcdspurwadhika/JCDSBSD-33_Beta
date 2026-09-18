@@ -184,7 +184,20 @@ Dampak bisnis yang diharapkan dari proyek ini adalah membantu hotel untuk:
 
 ---
 
-## 8. Contact
+## 8. Streamlit
+
+Aplikasi ini memperkirakan risiko pembatalan *booking* hotel dengan model XGBoost yang dilatih pada data *booking* 2015–2016 dan diuji pada data 2017. Setiap *booking* mendapat probabilitas pembatalan, *tier* risiko, dan rekomendasi tindakan operasional. Link aplikasi dapat diakses melalui [hotel-demand-cancellation.streamlit.app](https://hotel-demand-cancellation.streamlit.app/).
+
+Cara kerja aplikasi:
+
+1. Isi detail *booking*, atau unggah CSV berisi banyak *booking*.
+2. Data diproses lewat *feature engineering* yang sama seperti saat *training*.
+3. Model menghitung probabilitas pembatalan, lalu mengelompokkannya ke 3 *tier* risiko (Low, Medium, High).
+4. Setiap *tier* risiko dipetakan ke rekomendasi tindakan: monitoring rutin, reminder otomatis, atau konfirmasi ulang ke tamu.
+
+---
+
+## 9. Contact
 
 * **Name:** Zian Carlos Wong, Nadya Divia Go, Angela Adytha Putri
 * **Email:** ziancrlswong@gmail.com, nadya.diviago1612@gmail.com, angel.adytha@gmail.com
